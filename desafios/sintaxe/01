@@ -1,0 +1,59 @@
+// Classe Usuario
+class Usuario {
+    private String nome;
+    private int idade;
+    private String email;
+
+    // Construtor
+    public Usuario(String nome, int idade, String email) {
+        this.nome = nome;
+        this.idade = idade;
+        this.email = email;
+    }
+
+    // Métodos getter e setter
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    // Método para exibir informações do usuário
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Email: " + email);
+    }
+}
+
+// Classe principal para testar
+public class Main {
+    public static void main(String[] args) {
+        // Criando objetos da classe Usuario
+        Usuario usuario1 = new Usuario("João", 30, "joao@example.com");
+        Usuario usuario2 = new Usuario("Maria", 25, "maria@example.com");
+
+        // Exibindo informações
+        usuario1.exibirInformacoes();
+        System.out.println();
+        usuario2.exibirInformacoes();
+    }
+}
